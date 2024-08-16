@@ -116,3 +116,15 @@ erDiagram
 # 4 - Principais Telas do Sistema:
 
 # 5 - Arquitetura do Sistema:
+```mermaid
+graph TD
+    ClientWeb[Cliente Web] -->|Acessa via navegador| ServerWeb[Servidor Web]
+    ServerWeb -->|Executa| AppPHP[Aplicação PHP]
+    AppPHP -->|Consulta/Atualiza| Database[Servidor de Banco de Dados]
+    
+    subgraph "Sistema da Clínica Veterinária"
+        ServerWeb -->|Serve conteúdo| ClientWeb
+        AppPHP -->|Interage com| ServerWeb
+        Database -->|Armazena dados de clientes, animais, agendamentos, prontuários, receitas| AppPHP
+    end
+```
