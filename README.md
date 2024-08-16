@@ -133,3 +133,13 @@ graph TD
         Database -->|Armazena dados de clientes, animais, agendamentos, prontuários, receitas| AppPHP
     end
 ```
+```mermaid
+graph TD
+    Cliente["Cliente"] -->|Cadastro de cliente e animal| VeterinarioSystem["Sistema de Clínica Veterinária"]
+    Cliente -->|Agenda de Atendimento| VeterinarioSystem
+    Cliente -->|Realização de pagamento| VeterinarioSystem
+    VeterinarioSystem -->|Cadastro de cliente e animal| Atendente["Atendente"]
+    VeterinarioSystem -->|Cadastro de prontuário e ficha| Veterinario["Veterinário"]
+    VeterinarioSystem -->|Geração de Receita| Veterinario
+````
+
