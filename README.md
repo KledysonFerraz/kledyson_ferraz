@@ -115,10 +115,12 @@ erDiagram
 
 # 4 - Principais Telas do Sistema:
 
-<img src="login.png" alt="login" width="500" height="300">
-<img src="tela1.png" alt="tela inicial" width="500" height="300">
-<img src="tela2.png" alt="tela2" width="500" height="300">
-<img src="tela3.png" alt="tela3" width="500" height="300">
+<img src="login.png" alt="login" width="800" height="300">
+<img src="tela1.png" alt="tela inicial" width="800" height="300">
+<img src="tela2.png" alt="tela2" width="800" height="300">
+<img src="tela3.png" alt="tela3" width="800" height="300">
+<img src="tela4.png" alt="tela3" width="800" height="300">
+<img src="tela5.png" alt="tela3" width="800" height="300">
 
 # 5 - Arquitetura do Sistema:
 ```mermaid
@@ -142,4 +144,3 @@ graph TD
     VeterinarioSystem -->|Cadastro de prontuário e ficha| Veterinario["Veterinário"]
     VeterinarioSystem -->|Geração de Receita| Veterinario
 ````
-
